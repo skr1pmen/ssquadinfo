@@ -239,3 +239,39 @@ header a p {
 
 
 /* Конец аккардеона */
+
+@media only screen and (max-width: 800px) {
+    .welocomeBlock {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .widget {
+        display: none;
+    }
+    .descript {
+        margin: 20px auto;
+    }
+    .welocomeBlock {
+        padding-bottom: 20px;
+    }
+    .infoBlock {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        text-align: center;
+        grid-template-areas: "Image" "Title" "Desc";
+    }
+    .infoBlock img {
+        margin: 0 auto;
+    }
+    .commandGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .titleCom {
+        font-size: 18px;
+    }
+}
