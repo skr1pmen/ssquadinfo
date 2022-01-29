@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: #585a5f;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202225;
+}
+
+html {
+    background: #36393f;
+    scrollbar-color: #202225 #585a5f;
+    scrollbar-width: thin;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    background: #202225;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: max-content;
+    margin: 0 auto;
+}
+
+header a img {
+    width: 80px;
+    border-radius: 50px;
+    margin: 10px 0;
+    transform: translateY(0);
+}
+
+header img:hover {
+    transform: translateY(-5px);
+}
+
+header a p {
+    margin: 40px 0 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.welocomeBlock {
+    width: 70%;
+    display: grid;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #2f3136;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    grid-template-areas: "• widget" "welcLogo widget" "welcTitle widget" "descript widget" "openBut widget" "1 widget" "rules rules";
+}
+
+.welcLogo {
+    width: 150px;
+    grid-area: welcLogo;
+    margin: 0 auto;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: .7s border-radius;
+}
+
+.welcLogo:hover {
+    border-radius: 50px;
+}
+
+.welcTitle {
+    grid-area: welcTitle;
+    margin: 0 auto;
+}
+
+.vk {
+    color: #0171f2;
+}
+
+.yt {
+    color: #f20000;
+}
+
+.tw {
+    color: #8a43f2;
+}
+
+.vk,
+.yt,
+.tw {
+    text-decoration: none;
+}
+
+.descript {
+    grid-area: descript;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.openBut {
+    grid-area: openBut;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 25px;
+    margin-top: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #16e3a6, #1ca633);
+    border-image-slice: 1;
+}
+
+.openBut:hover {
+    background: linear-gradient(90deg, #16e3a6, #1ca633);
+    color: #2f3136;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 255, 86, 0.45);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 255, 86, 0.45);
+    box-shadow: 0px 4px 8px 0px rgba(0, 255, 86, 0.45);
+}
+
+.widget {
+    grid-area: widget;
+    margin: 0 auto;
+}
+
+.rules {
+    grid-area: rules;
+    margin-top: 25px;
+}
+
+.commandsblock {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.titleCom {
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+.infoBlock {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "1 Image" "Title Image" "Desc Image" "• Image";
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    grid-gap: 10px;
+    color: #fff;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #2f3136;
+}
+
+.infoBlock h2 {
+    grid-area: Title;
+}
+
+.infoBlock p {
+    grid-area: Desc;
+}
+
+.infoBlock img {
+    grid-area: Image;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.commandGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+/* Аккадеон */
+
+.accordion {
+    background-color: #2f3136;
+    color: #FFF;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.active,
+.accordion:hover {
+    background-color: #33363c;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #2f3136;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.panel p {
+    margin: 5px 0;
+}
+
+
+/* Конец аккардеона */
