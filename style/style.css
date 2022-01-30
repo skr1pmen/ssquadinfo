@@ -13,10 +13,76 @@
     background: #202225;
 }
 
+
+/* меню */
+
+.navbar {
+    overflow: hidden;
+    width: max-content;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    width: max-content;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #585a5f;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 150px;
+}
+
+.dropdown-content a:hover {
+    background-color: #202225;
+    width: 150px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Конец меню */
+
 html {
     background: #36393f;
     scrollbar-color: #202225 #585a5f;
     scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -39,11 +105,6 @@ header a img {
     width: 80px;
     border-radius: 50px;
     margin: 10px 0;
-    transform: translateY(0);
-}
-
-header img:hover {
-    transform: translateY(-5px);
 }
 
 header a p {
@@ -198,6 +259,27 @@ header a p {
     font-style: italic;
 }
 
+.firstStepsBlock {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.midle {
+    text-align: center;
+}
+
+.midle a {
+    color: #fff;
+}
+
+.welImg {
+    width: 250px;
+}
+
+.chat {
+    height: 50vh;
+}
+
 
 /* Аккадеон */
 
@@ -244,6 +326,10 @@ header a p {
 
 .panel p {
     margin: 5px 0;
+}
+
+.panel img {
+    border-radius: 9px;
 }
 
 
