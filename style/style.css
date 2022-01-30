@@ -185,8 +185,17 @@ header a p {
 
 .commandGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+}
+
+.exemple {
+    display: ruby;
+    background: #202225;
+    padding: 0 5px;
+}
+
+.exempleText {
+    font-style: italic;
 }
 
 
@@ -273,5 +282,8 @@ header a p {
     }
     .titleCom {
         font-size: 18px;
+    }
+    .exemple {
+        display: block;
     }
 }
